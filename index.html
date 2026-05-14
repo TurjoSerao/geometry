@@ -34,7 +34,7 @@
                             <span>cm</span>
                         </div>
                         <div>
-                            <p class="text-2xl">Area: <span class="text-red-400 font-bold" id="triangle-area"></span> <span>cm<sup>2</sup></span></p>
+                            <p class="text-2xl">Area: <span class="text-red-400 font-bold" id="triangle-area">0</span> <span>cm<sup>2</sup></span></p>
                         </div>
                         <div class="card-actions">
                             <button onclick="triangleCalculatorArea()" class="btn btn-primary w-full">Calculate</button>
@@ -56,7 +56,7 @@
                             <span>cm</span>
                         </div>
                         <div>
-                            <p class="text-2xl">Area: <span class="text-red-400 font-bold" id="rectangle-area"></span> <span>cm<sup>2</sup></span></p>
+                            <p class="text-2xl">Area: <span class="text-red-400 font-bold" id="rectangle-area">0</span> <span>cm<sup>2</sup></span></p>
                         </div>
                         <div class="card-actions">
                             <button onclick="rectangleCalculatorArea()" class="btn btn-primary w-full">Calculate</button>
@@ -64,9 +64,49 @@
                     </div>
                 </div>
                 <!-- Parallelogram -->
-                
+                <div class="card bg-base-200 w-96 shadow-sm p-4">
+                    <figure>
+                        <img src="images/parallelogram.png" alt="Shoes" />
+                    </figure>
+                    <div class="card-body">
+                        <h2 class="card-title">Parallelogram</h2>
+                        <p>Area (A) = b x h</p>
+                        <div class="mr-4 ml-2">
+                            <input id="parallelogram-base" class="w-24 text-2xl p-1 rounded-sm" type="text" placeholder="base">
+                            <span>cm</span>
+                            <input id="parallelogram-height" class="w-24 text-2xl p-1 rounded-sm" type="text" placeholder="height">
+                            <span>cm</span>
+                        </div>
+                        <div>
+                            <p class="text-2xl">Area: <span class="text-red-400 font-bold" id="parallelogram-area">0</span> <span>cm<sup>2</sup></span></p>
+                        </div>
+                        <div class="card-actions">
+                            <button onclick="parallelogramArea()" class="btn btn-primary w-full">Calculate</button>
+                        </div>
+                    </div>
+                </div>
                 <!-- Rhombus -->
-                
+                <div class="card bg-base-200 w-96 shadow-sm p-4">
+                    <figure>
+                        <img src="images/rhombus.png" alt="Shoes" />
+                    </figure>
+                    <div class="card-body">
+                        <h2 class="card-title">Rhombus</h2>
+                        <p>Area (A) = 0.5 x d<sub>1</sub> x d<sub>2</sub></p>
+                        <div class="mr-4 ml-2">
+                            <input id="rhombus-diagonal-1" class="w-24 text-2xl p-1 rounded-sm" type="text" placeholder="d 1">
+                            <span>cm</span>
+                            <input id="rhombus-diagonal-2" class="w-24 text-2xl p-1 rounded-sm" type="text" placeholder="d 2">
+                            <span>cm</span>
+                        </div>
+                        <div>
+                            <p class="text-2xl">Area: <span class="text-red-400 font-bold" id="rhombus-area">0</span> <span>cm<sup>2</sup></span></p>
+                        </div>
+                        <div class="card-actions">
+                            <button onclick="rhombusArea()" class="btn btn-primary w-full">Calculate</button>
+                        </div>
+                    </div>
+                </div>
             </div>
             <!-- Calculation Container -->
             <div class="w-96 border-2 border-gray-700 rounded-md">
@@ -77,6 +117,8 @@
 
     <script src="scripts/triangle-calculate.js"></script>
     <script src="scripts/rectangle-calculate.js"></script>
+    <script src="scripts/parallelogram-calculate.js"></script>
+    <script src="scripts/rhombus-calculate.js"></script>
 </body>
 
 </html>
